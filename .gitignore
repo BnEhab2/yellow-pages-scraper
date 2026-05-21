@@ -1,0 +1,20 @@
+# Python temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Scraping output data (must not be committed to GitHub)
+*.csv
+*.xlsx
+*.xls
+*.pdf
+
+# Environment folders
+.venv/
+venv/
+env/
+ENV/
+
+# IDE settings
+.vscode/
+.idea/
