@@ -39,12 +39,6 @@ time.sleep(1)
 searchIcon.click()
 time.sleep(2)
 
-
-# input('enter to continue...')
-
-
-# here the loop starts
-
 while True:
     cards = driver.find_elements(By.XPATH, "//a[@class='item-title']")
     numCards = len(cards)
@@ -97,22 +91,3 @@ with open(file, mode='w', encoding='utf-8', newline='') as f:
     writer.writerow(["name", "phone", "address", "url"])
     writer.writerows(data)
 input("press Enter to exit...")
-
-
-
-# input("press enter to exit...")
-
-# # the first 4 cards
-# '''
-# /html/body/div[5]/div/div[3]/div[2]/company-result-0-1756384618/div/div[1]/div[2]/div[1]/a
-# /html/body/div[5]/div/div[3]/div[2]/company-result-1-1756384618/div/div[1]/div[2]/div[1]/a
-# /html/body/div[5]/div/div[3]/div[2]/company-result-2-1756384618/div/div[1]/div[2]/div[1]/a
-# /html/body/div[5]/div/div[3]/div[2]/company-result-3-1756384618/div/div[1]/div[2]/div[1]/a
-# /html/body/div[5]/div/div[3]/div[2]/company-result-4-1756387832/div/div[1]/div[2]/div[1]/a
-# '''
-
-# # after the page ends navigate to the next page
-# '''
-# //a[span[text()='❯']]
-# '''
-
